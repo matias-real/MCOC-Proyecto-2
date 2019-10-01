@@ -63,7 +63,7 @@ while ti < tmax:
 
 	#evaluar fuerzas sobre la particula
 	fD = 0.5*Cd*norm_vrel*vrel
-	Fi = W +fD
+	Fi = W +fD #Suma de vectores, no es necesario hacerlo por ejes (estan definidos como vectores mas arriba).
 
 	# print "Fi =",Fi
 
