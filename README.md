@@ -8,4 +8,4 @@ La predicción del transporte de sedimentos está lejos de ser acertada porque n
 Una forma de predecir el transporte de sedimentos podría ser a través de una simulación numérica directa (resolver la ecuación de Navier-Stokes en cada cuadrícula de la celda) pero es muy caro y virtualmente imposible de hacer para miles o millones de partículas. Otra forma de predecir el transporte de sedimentos (la cual sería mejor opción) sería a modelar las fuerzas hidrodinámicas a partir de las grillas en que se conoce la velocidad. Esta forma es mucho más conveniente y es la que se tratará de modelar en este proyecto.
 
 ## Objetivos del proyecto
-Implementar un modelo de simulacion numerico para transporte de sedimentos de fondo. Comprender aspectos de desempeño de aplicaciones de computación científica tales como IO y complejidad algorítmica.
+Implementar un modelo de simulación numérico para transporte de sedimentos de fondo. Comprender aspectos de desempeño de aplicaciones de computación científica tales como IO y complejidad algorítmica.
