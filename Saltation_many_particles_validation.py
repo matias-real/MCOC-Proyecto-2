@@ -93,11 +93,13 @@ for particle in range(N):
 
 #grafico todo
 figure()
-for i in Resultados_x:	
-	plot(i[:,0],i[:,1],label="vx = "+str(v0[0])+" vy = "+str(v0[1]))
+
+for i  in range(len(Resultados_x)):
+	plot(Resultados_x[i][:,0],Resultados_x[i][:,1],label="vx = "+str(Resultados_v[i][0,0])+" vy = "+str(Resultados_v[i][0,1]))
 	ylim(0,5*_mm) #limite del eje y	
 plt.legend()
 show()
+
 
 '''
 #Grafico de particula (trayectoria)
