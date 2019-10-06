@@ -1,4 +1,12 @@
 # MCOC-Proyecto-2
+Proyecto 2 Métodos computacionales para Obras Civiles
+
+integrantes:
+- Ceroni Gonzalez, Benjamijn Andres []
+- Greve Velasco, Benjamin Andres []
+- Lorca Yañez, Felipe Ignacio []
+- Real Santis, Matias Guillermo []
+
 ## Descripción inicial del proyecto
 La predicción del transporte de sedimentos está lejos de ser acertada porque no hay un profundo conocimiento sobre los procesos físicos que ocurren:
 - Las predicciones sobre el transporte neto mediante simulaciones no son suficientes.
