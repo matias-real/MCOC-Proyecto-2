@@ -20,4 +20,4 @@ Implementar un modelo de simulación numérico para transporte de sedimentos de 
 
 Para comenzar, primero se realizará la simulación del movimiento de una sola partícula en dos dimensiones. Esto con la finalidad de simplificar la situación.
 
-Luego se implementará el código de manera que simule el movimiento para varias partículas, lo que implicaría que se produzcan colisiones no solo entre partículas y el suelo sino que también entre partículas.
+Luego se implementará el código de manera que simule el movimiento para varias partículas, ya que en la realidad hay más de una partícula. En esta implementación al haber más de una partícula, no solo se producirán interacciones partícula-suelo, sino que también partícula-partícula. 
