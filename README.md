@@ -17,3 +17,5 @@ Una forma de predecir el transporte de sedimentos podría ser a través de una s
 
 ## Objetivos del proyecto
 Implementar un modelo de simulación numérico para transporte de sedimentos de fondo. Comprender aspectos de desempeño de aplicaciones de computación científica tales como IO y complejidad algorítmica.
+Para comenzar, primero se realizará la simulación del movimiento de una sola partícula en dos dimensiones. Esto con la finalidad de simplificar la situación.
+Luego se implementará el código de manera que simule el movimiento para varias partículas, lo que implicaría que se produzcan colisiones no solo entre partículas y el suelo sino que también entre partículas.
