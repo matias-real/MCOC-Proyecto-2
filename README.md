@@ -2,10 +2,10 @@
 Proyecto 2 Métodos computacionales para Obras Civiles
 
 integrantes:
-- Ceroni Gonzalez, Benjamijn Andres []
-- Greve Velasco, Benjamin Andres []
-- Lorca Yañez, Felipe Ignacio []
-- Real Santis, Matias Guillermo []
+- Ceroni Gonzalez, Benjamijn Andres [https://github.com/Benjaceroni]
+- Greve Velasco, Benjamin Andres [https://github.com/bagreve]
+- Lorca Yañez, Felipe Ignacio [https://github.com/naxolorca]
+- Real Santis, Matias Guillermo [https://github.com/matias-real]
 
 ## Descripción inicial del proyecto
 La predicción del transporte de sedimentos está lejos de ser acertada porque no hay un profundo conocimiento sobre los procesos físicos que ocurren:
