@@ -1,5 +1,3 @@
-#python 2.7
-#particulas en ejes paralelos
 from matplotlib.pylab import *
 from scipy.integrate import odeint
 import random
@@ -7,115 +5,145 @@ import random
 #Unidades base SI
 _m = 1.
 _kg = 1.
+_s = 1.
 _cm = 1e-2*_m
 _mm = 1e-3 *_m
 _gr = 1e-3 * _kg
-_s = 1.
+_in = 2.54*_cm
+
+g = 9.81*_m/_s**2
+d= 0.56*_mm
+
+rho_agua = 1000.*_kg/(_m**3)
+rho_particula = 2650.*_kg/(_m**3)
+
+dt = 0.001*_s  #paso de tiempo
+tmax = 0.5*_s  # tiempo maximo de simulacion
+ti = 0.*_s # tiempo actual
+
+Nparticulas = 3
 
 
-def particula(z,t): 
-	xi = z[:2]
-	vi = z[2:]
-	vf = array([vfx, vfy])
-	vrel = vf - vi
-	fD = (0.5*Cd*rho_agua*norm(vrel)*A)*vrel
-	# fL=3.0/4.0*alpha*Cd*()
-	Fi = W + fD +fB
+x0 =10*d*rand(Nparticulas)
+y0 = 3*d*rand(Nparticulas) + d
+
+vx0 = rand(Nparticulas)/2
+vy0 = rand(Nparticulas)/2
+
+
+A = pi*(d/2)**2
+V = (4./3.)*pi*(d/2)**3
+m = rho_particula*V
+
+
+W = array([0, -m*g])
+
+t= arange(0,tmax,dt)
+Nt = len(t)
+
+norm = lambda v: sqrt(dot(v,v))
+
+Cd = 0.47 # Para particula esferica
+Cm = 0.5
+CL = 0.2
+Rp = 73.
+R = (rho_particula/rho_agua - 1)
+alpha = 1/(1 + R + Cm)
+
+ihat = array([1,0])
+jhat = array([0,1])
+
+ustar = 0.14 # paper entre 0.14 y 0.23 (m/s)
+def velocity_field(x):
+	z = x[1] /d
+	if z > 1./30:
+		uf = ustar*log(30.*z)/0.41
+	else:
+		uf = 0
+	return array([uf,0])
 	
-	if xi[1] < 0: # Si la posicion de la particula es negativa significa que ya choco. Le aplico k_penal para que la particula suba (rebote)
-		Fi[1] += -k_penal(v0)*xi[1]
 
-	zp = zeros(4) #Crea arreglo de 4 ceros (zp =[0, 0, 0, 0])
-	zp[:2] = vi # Iguala los ultimos 2 elementos de zp con los 2 elementos de vi (zp = [0, 0, vx, vy] )	
-	zp[2:] = Fi/m # Iguala los 2 primeros elementos de zp a la aceleracion (zp = [ax, ay, vx, vy]) 
+vfx = velocity_field([0,4*d])[0]  #Normalizado d
+k_penal = 100*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm)
+
+
+def particula(z,t):
+	zp = zeros(4*Nparticulas)
+
+	for i in range(Nparticulas):
+		di = d 
+		xi = z[4*i:(4*i+2)]
+		vi = z[4*i+2:(4*i+4)]
+
+		vf = velocity_field(xi)
+		vf_top = norm(velocity_field(xi + (di/2)*jhat)) #falta
+		vf_bot = norm(velocity_field(xi - (di/2)*jhat)) #falta
+		vrel = vf - vi
+		fD = (0.5*Cd*alpha*rho_agua*norm(vrel)*A)*vrel  #falta
+		fL = (0.5*CL*alpha*rho_agua*(vf_top**2 -vf_bot**2)*A)*jhat #falta
+
+		Fi = W + fD + fL
+
+		if xi[1] < 0:
+			Fi[1] += -k_penal*xi[1]
+
+		zp[4*i:(4*i+2)] = vi
+		zp[4*i+2:(4*i+4)] = Fi/m
+
+		for i in range(Nparticulas):
+			xi = z[4*i:(4*i+2)]
+			for j in range(Nparticulas):
+				if i > j:
+					xj = z[4*j:(4*j+2)]
+					rij = xj -xi
+					if norm(rij) < d:
+						delta = d - norm(rij)
+						nij = rij/norm(rij)
+						Fj = k_penal*delta*nij
+						Fi = -k_penal*delta*nij
+						zp[4*i+2:(4*i+4)] += Fi/m
+						zp[4*j+2:(4*j+4)] += Fi/m
+
 	return zp
 
-N = 3 #numero de particulas
 
-# Lista para guardar resultados
-Resultados_x = [] 
-Resultados_v = [] 
-#velocidades iniciales del flujo
-vfx = 5.0*_m/_s #m/s 
-vfy = 0.0*_m/_s #m/s 
+z0 = zeros(4*Nparticulas)
+z0[0::4] = x0
+z0[1::4] = y0
+z0[2::4] = vx0
+z0[3::4] = vy0
 
-Cd = 0.47 # Particula esferica
-g = 9.81 *_m/_s**2
-d= 1*_mm  # Diametro de la particula
-rho_agua = 1000.*_kg/(_m**3) 
-rho_particula = 2650. * _kg/(_m**3)
-
-A = pi*(d/2)**2 # Area de la particula
-V = (4./3.)*pi*(d/2)**3 # Volumen de la particula
-m = rho_particula*V   # Masa de la particula
+print "Integrando"
+z = odeint(particula,z0,t)
+print "Finalizado"
 
 
-dt= 1e-3*_s # Paso de tiempo
-tmax = 2.*_s # tiempo maximo de simulacion
+fig = figure()
 
-ti = 0.*_s #tiempo actual
+ax=gca() #para linea suelo
 
+for i in range(Nparticulas):
+	xi = z[:,4*i]
+	yi = z[:,4*i+1]
+	col=rand(4)
+	plot(xi,yi,"--.",color=col)
 
-#For para ver cada particula
-for particle in range(N):
+	#for x,y in zip(xi,zi):
+	#	ax.add_artist(Circle(xy=(x,y),radius=d/2,color=col,alpha=0,))
 
-	vrand = random.random()
-	xrand = random.random()
-	x0 = array([0.,xrand*_mm], dtype =double) #en milimetros
-	v0 = array([1.,vrand*2.*_m/_s], dtype =double)
+#ylim[0,10*_mm]
 
-	#velocidad y posicion actual
-	xi = x0 # =zeros(2, dtype=double)
-	vi = v0 #=zeros(2, dtype=double)
+ax.axhline(d/2,color="k",linestyle="--")
 
-	#velocidad y posicion en el instante mas 1
-	xim1 =zeros(2, dtype=double)
-	vim1 =zeros(2, dtype=double)
+#axis("equal")
 
-
-	
-	W = array([0, -m*g])   # Fuerza de gravedad
-	fB = array([0,rho_agua*V*g]) # Fuerza buoyante
-
-	t 	= arange(0,tmax,dt)  
-	Nt = len(t)
-
-	norm = lambda v: sqrt(dot(v,v))
-
-	k_penal = lambda v: 1000*0.5*Cd*rho_agua*A*norm(v)/(1*_mm)    # El k_penal hace que la particula rebote cuando choca con el suelo
-	
-	z0 = zeros(4)
-	z0[:2] = x0
-	z0[2:] = v0
-	z=odeint(particula,z0,t)
-	Resultados_x.append(z[:,:2])
-	Resultados_v.append(z[:,2:])
-
-#grafico todo
-figure()
-
-for i  in range(len(Resultados_x)):
-	plot(Resultados_x[i][:,0],Resultados_x[i][:,1],label="vx = "+str(Resultados_v[i][0,0])+" vy = "+str(Resultados_v[i][0,1]))
-	ylim(0,5*_mm) #limite del eje y	
-plt.legend()
 show()
+#plot()
+
+#figure()
 
 
-'''
-#Grafico de particula (trayectoria)
-figure()
-plot(x[:,0],x[:,1])
-ylim(0,5*_mm) #limite del eje y
 
 
-figure()
-subplot(2,1,1)
-plot(t,x[:,0],label="x")
-plot(t,x[:,1],label="y")
-plt.legend()
-subplot(2,1,2)
-plot(t,v[:,0],label="vx")
-plot(t,v[:,1],label="vy")
-plt.legend()
-show()
-'''
+
+
