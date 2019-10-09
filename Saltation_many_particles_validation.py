@@ -12,7 +12,7 @@ _gr = 1e-3 * _kg
 _in = 2.54*_cm
 
 g = 9.81*_m/_s**2
-d= 0.56*_mm
+d= 5.6*_mm
 
 rho_agua = 1000.*_kg/(_m**3)
 rho_particula = 2650.*_kg/(_m**3)
@@ -21,7 +21,7 @@ dt = 0.001*_s  #paso de tiempo
 tmax = 0.5*_s  # tiempo maximo de simulacion
 ti = 0.*_s # tiempo actual
 
-Nparticulas = 3
+Nparticulas = 5
 
 
 x0 =10*d*rand(Nparticulas)
@@ -102,7 +102,7 @@ def particula(z,t):
 						Fj = k_penal*delta*nij
 						Fi = -k_penal*delta*nij
 						zp[4*i+2:(4*i+4)] += Fi/m
-						zp[4*j+2:(4*j+4)] += Fi/m
+						zp[4*j+2:(4*j+4)] += Fj/m
 
 	return zp
 
@@ -141,9 +141,3 @@ show()
 #plot()
 
 #figure()
-
-
-
-
-
-
