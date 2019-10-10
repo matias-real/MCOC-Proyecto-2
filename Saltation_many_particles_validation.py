@@ -21,11 +21,11 @@ dt = 0.001*_s  #paso de tiempo
 tmax = 0.5*_s  # tiempo maximo de simulacion
 ti = 0.*_s # tiempo actual
 
-Nparticulas = 5
+Nparticulas = 10
 
 
-x0 =10*d*rand(Nparticulas)
-y0 = 3*d*rand(Nparticulas) + d
+x0 =100*d*rand(Nparticulas)
+y0 = 30*d*rand(Nparticulas) + d
 
 vx0 = rand(Nparticulas)/2
 vy0 = rand(Nparticulas)/2
@@ -135,7 +135,7 @@ for i in range(Nparticulas):
 
 ax.axhline(d/2,color="k",linestyle="--")
 
-#axis("equal")
+axis("equal")
 
 show()
 #plot()
