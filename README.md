@@ -22,7 +22,7 @@ Para comenzar, primero se realizará la simulación del movimiento de una sola p
 
 Luego se implementará el código de manera que simule el movimiento para varias partículas, ya que en la realidad hay más de una partícula. En esta implementación al haber más de una partícula, no solo se producirán interacciones partícula-suelo, sino que también partícula-partícula. 
 
-Una vez implementado el código para la simulación del movimiento de varias partículas, cada uno de los integrantes creará un repositorio aparte en el cual se subirá el código. En el README.md cada uno de los integantes mencionará las propiedades de su computador y correrá el código para un distinto número de partículas (todos deben hacerlo para las mismas cantidades), de manera de comparar el tiempo de funcionamiento del código en los distintos computadores.
+Una vez implementado el código para la simulación del movimiento de varias partículas, cada uno de los integrantes creará un repositorio aparte en el cual deberá subirá el código. En cada uno de los README.md, los integantes mencionarán las propiedades de su computador y correrán el código para un distinto número de partículas (todos deben hacerlo para las mismas cantidades), de manera de comparar el tiempo de funcionamiento del código en los distintos computadores.
 
 ## Links de los repositorios aparte de cada uno de los integrantes
 - https://github.com/matias-real/MCOC-Proyecto-2-Entrega-4
