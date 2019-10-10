@@ -21,3 +21,6 @@ Implementar un modelo de simulación numérico para transporte de sedimentos de 
 Para comenzar, primero se realizará la simulación del movimiento de una sola partícula en dos dimensiones. Esto con la finalidad de simplificar la situación.
 
 Luego se implementará el código de manera que simule el movimiento para varias partículas, ya que en la realidad hay más de una partícula. En esta implementación al haber más de una partícula, no solo se producirán interacciones partícula-suelo, sino que también partícula-partícula. 
+
+## Links de los repositorios aparte de cada uno de los integrantes
+- https://github.com/matias-real/MCOC-Proyecto-2-Entrega-4
