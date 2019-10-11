@@ -114,11 +114,13 @@ def particula(z,t):
 
 		if xi[1] < y :
 			
-			if xi[1] < 0:
-				Fi[1] += -k_penal*xi[1]
-			else:
-				Fi[1] += k_penal*xi[1]
-
+			coordenadaX = round(xi[0]/d)*d+d/2
+			rij = xi - [coordenadaX,0]
+			if norm(rij) < d:
+				delta = d - norm(rij)
+				nij = rij/norm(rij)
+				Fi += k_penal*delta*nij
+				
 		zp[4*i:(4*i+2)] = vi
 		zp[4*i+2:(4*i+4)] = Fi/m
 
@@ -127,7 +129,7 @@ def particula(z,t):
 			for j in range(Nparticulas):
 				if i > j:
 					xj = z[4*j:(4*j+2)]
-					rij = xj -xi
+					rij = xj - xi
 					if norm(rij) < d:
 						delta = d - norm(rij)
 						nij = rij/norm(rij)
