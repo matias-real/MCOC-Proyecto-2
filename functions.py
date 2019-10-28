@@ -1,9 +1,8 @@
 from matplotlib.pylab import *
+from parameters import *
 
+#15:50 video
 
-
-
-# previo a esto nunca muestra.
 norm = lambda v: sqrt(dot(v,v))
 
 def propiedades_area_volumen_masa(d):
@@ -44,7 +43,10 @@ def fuerza_impacto_suelo(x,v,d):
 		Fi = 0. * r 
 	return Fi
 
-# tiene cosas identadas que no se ven algo de delta con una restriccion de esta.
+	# delta = x[1]-d/2
+	# if delta < 0:
+	#	Fi += -k_penal*delta*jhat
+	# return Fi
 
 
 
@@ -103,7 +105,7 @@ def zp_M_particulas(z,t,M):
 
 	zp += zp_choque_M_particula(z,t,M=M)
 
-	return zp
+	return z|p
 
 
 def zp_choque_M_particulas(z,t,M):
@@ -112,17 +114,17 @@ def zp_choque_M_particulas(z,t,M):
 		xi = z[4*i:(4*i+2)]
 		di = d
 		area_i,vol_i,masa_i = propiedades_area_vol_masa(di)
-		for i in range(i+1,M):
+		for j in range(i+1,M):
 			xj = z[4*j:(4*j+2)]
 			dj = d
 			rij = xj - xi
 			norm_rij = norm(rij)
-			if norm_rij <0.5*(di+dj):
+			if norm_rij < 0.5*(di+dj):
 				area_j,vol_j,masa_j = propiedades_area_vol_masa(dj)
 				delta = 0.5 * (di+dj) - norm_rij
 				nij = rij / norm_rij
 				Fj = k_penal * delta * nij
 				Fi = -Fj
 				zp[4*i+2:(4*i-4)] += Fi/masa_i
-				zp[4*j+2:(4*j+4)] += Fi/masa_j
+				zp[4*j+2:(4*j+4)] += Fj/masa_j
 	return zp

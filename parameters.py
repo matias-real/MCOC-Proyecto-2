@@ -1,9 +1,12 @@
 from matplotlib.pylab import *
 
+norm = lambda v: sqrt(dot(v,v))
+#Completo
+
 Nparticulas = 2
 
 
-
+#Unidades base son SI
 _m = 1.
 _kg = 1.
 _s = 1.
@@ -18,8 +21,8 @@ d = 0.15*_mm
 rho_agua = 1000.*_kg/(_m**3)
 rho_particula = 2650.*_kg/(_m**3)
 
-dt = 0.0001*_s    	# paso de tiempo 
-tmax = 2*_s  # tiempo maximo de simulacion
+dt = 0.00001*_s    	# paso de tiempo 
+tmax = 0.05*_s  # tiempo maximo de simulacion
 
 Cd = 0.47 # Para particula esferica
 Cm = 0.5
@@ -45,12 +48,6 @@ print "tau_star=",tau_star
 print "tau_cr=",tau_cr
 print "tau_star/tau_cr=",tau_star/tau_cr
 print "ustar=",ustar
-
-# cosas identadas que no se ven importantes
-
-
-
-
 
 
 
