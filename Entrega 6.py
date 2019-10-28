@@ -85,7 +85,7 @@ if doit:
 			print "k = {} t = {} ".format(k,k*dt)
 
 		done *= 0
-		for i in range (Nparticulas):
+		for i in range(Nparticulas):
 			irange = slice(4*i, 4*i+4)	
 			print irange												
 			zk_i = zk[irange]
