@@ -19,7 +19,7 @@ Nt = len(t)
 
 Nparticulas = 10
 
-fout = open("resultado.txt","w")
+#fout = open("resultado.txt","w")
 
 if reuse_initial_condition:
 	print "reusing_initial_conditions"
@@ -174,7 +174,7 @@ if doit:
 
 				else:
 					
-					zkm1_i = odeint(zp_una_particula, zk_i, [dt*k, dt*(k-1)])								
+					zkm1_i = odeint(zp_una_particula, zk_i, [dt*k, dt*(k+1)]) ###cambien - por +								
 
 
 					zkm1[irange] = zkm1_i[1,0:4]
@@ -193,7 +193,6 @@ fout.close()
 print "tiempo_bloque_1", tiempo_bloque_1
 print "tiempo_bloque_2", tiempo_bloque_2
 print "tiempo total", end - start
-print "Tiempo de escritura es {} % del tiempo total. ".format(tiempo_bloque_2)
 
 
 
