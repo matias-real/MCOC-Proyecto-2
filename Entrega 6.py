@@ -8,7 +8,7 @@ import scipy as sp
 #norm = lambda v: sqrt(dot(v,v,T))
 norm = lambda v: sqrt(dot(v,v))
 
-#reuse_inicial_condicion = True
+#reuse_initial_condition = True
 reuse_initial_condition = False
 
 doit = True
