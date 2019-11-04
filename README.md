@@ -50,51 +50,51 @@ Una vez implementado el código para la simulación del movimiento de varias par
 
 **Simulación 1**
 
-![Grafico_1](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/1.png)
+![Grafico_1](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/1.png)
 
 **Simulación 2**
 
-![Grafico_2](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/3.png)
+![Grafico_2](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/3.png)
 
 **Simulación 3**
 
-![Grafico_3](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/10.png)
+![Grafico_3](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/10.png)
 
 **Simulación 4**
 
-![Grafico_4](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/15.png)
+![Grafico_4](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/15.png)
 
 **Simulación 5**
 
-![Grafico_5](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/20.png)
+![Grafico_5](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/20.png)
 
 **Simulación 6**
 
-![Grafico_6](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/30.png)
+![Grafico_6](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/30.png)
 
 **Simulación 7**
 
-![Grafico_7](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/45.png)
+![Grafico_7](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/45.png)
 
 **Simulación 8**
 
-![Grafico_8](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/70.png)
+![Grafico_8](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/70.png)
 
 **Simulación 9**
 
-![Grafico_9](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/100.png)
+![Grafico_9](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/100.png)
 
 **Simulación 10**
 
-![Grafico_10](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/120.png)
+![Grafico_10](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/120.png)
 
 **Simulación 11**
 
-![Grafico_11](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico/150.png)
+![Grafico_11](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico/150.png)
 
 **Grafico N particulas vs Tiempo**
 
-![Grafico_11](https://raw.githubusercontent.com/naxolorca/MCOC-Proyecto-2-Entrega-4/master/Felipe_Lorca/grafico.png)
+![Grafico_11](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico.png)
 
 ## Discusión
 
