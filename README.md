@@ -35,9 +35,10 @@ Una vez implementado el código para la simulación del movimiento de varias par
 Este código nace del programa anterior pero optimizado, con el fin de lograr que el timepo de funcionamiento aumente linealmente con el número de partículas a simular, a diferencia del código anterior que lo hacía de forma exponencial. Esto se logró a través de un cambio en el funcionamiento de la función de choque dentro del odeint, que es lo que más tardaba en el programa anterior. Es por esto que se separan las partículas que pueden chocar y las que no, de manera de acelerar el proceso ya que al no chocar el odeint se simplifica. Otra aspecto que se mejoró en esta entrega fue que los datos se guardaron en un archivo binario para luego leerlos y posteriormente graficarlos con un código aparte.
 
 El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 0.05 segundos y se utilizaran los mismos archivos de posicionamiento del codigo anterior con 2, 5, 10 y 20 particulas.
+También se tomo estos archivos con 1, 3, 10, 15, 20, 30, 45, 70, 100, 120 y 150 partículas.
 
-**Entrega 6 mejorada Felipe Lorca**
-## Tiempo de simulación y Numero de particulas
+##Entrega 6 mejorada Felipe Lorca
+**Tiempo de simulación y Numero de particulas**
 
 	Simulaciones con dt de 0.00001 s y t max de 0.05 s
 
