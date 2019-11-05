@@ -100,7 +100,7 @@ Una vez implementado el código para la simulación del movimiento de varias par
 
 Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se alcanzó el objetivo de esta última entrega.
 
-## Codigo 2: optimizado
+## Entrega 6 mejorada Benjamín Greve
 Este codigo nace del programa anterior pero optimizado con el fin de lograr que mientras mas particulas el tiempo de proseso tarde linealmente más, a diferencia del codigo anterior que era exponencial. Esto se logra gracias a cambiar el funcionamiento de la funcion de choque dentro del odeint que es lo que más tarda el programa anterior, es por eso que se separan las particlas que pueden chocar con las que no, acelerando el proceso ya que al no chocar el odeint se simplifica, otra cosa que se mejora es guardar los datos en un archivo binario para luego leerlos y plotearlos con un codigo aparte.
 
 El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 0.05 segundos y se utilizaran los mismos archivos de posicionamiento del codigo anterior con 2, 5, 10 y 20 particulas.
@@ -116,3 +116,6 @@ El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 
 
 - Con 20 Particulas: tiempo total 86.361000061 segundos.
 ![Veinte particulas](https://user-images.githubusercontent.com/53497030/68216637-efe35400-ffbf-11e9-946c-b76c1015d46e.PNG)
+
+## Entrega 6 mejorada Matías Real
+
