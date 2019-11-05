@@ -98,5 +98,4 @@ Una vez implementado el código para la simulación del movimiento de varias par
 
 ## Discusión
 
-	Utilizando este codigo podemos apreciar en el ultimo grafico, que el tiempo que se
-	demora en ejecutar aumenta de forma lineal al aumentar la cantidad de particulas.
+Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se alcanzó el objetivo de esta última entrega.
