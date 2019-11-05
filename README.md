@@ -31,7 +31,7 @@ Una vez implementado el código para la simulación del movimiento de varias par
 - https://github.com/Benjaceroni/MCOC-Proyecto-2
 
 
-**Entrega 6 mejorada Felipe Lorca**
+## Entrega 6 mejorada Felipe Lorca
 ## Tiempo de simulación y Numero de particulas
 
 	Simulaciones con dt de 0.00001 s y t max de 0.05 s
@@ -100,6 +100,26 @@ Una vez implementado el código para la simulación del movimiento de varias par
 
 Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se alcanzó el objetivo de esta última entrega.
 
+## Entrega 6 mejorada Benjamín Ceroni
+## Tiempo de simulación y Numero de particulas
+
+	Simulaciones con dt de 0.00001 s y t max de 0.05 s
+
+	Para la simulación  1:   5.3s  		N = 1
+	Para la simulación  2:   8.6s  		N = 3
+	Para la simulación  3:   25.2s 		N = 10
+	Para la simulación  4:   37.6s 		N = 15
+	Para la simulación  5:   50.2s 		N = 20
+	Para la simulación  6:   79.9s 		N = 30
+	Para la simulación  7:   122.8s 	N = 45
+	Para la simulación  8:   206.9s 	N = 70
+	Para la simulación  9:   329.8s 	N = 100
+	Para la simulación 10:   423.6s 	N = 120
+	Para la simulación 11:   573.4s 	N = 150
+
+## Tiempo simulación vs Numero de partículas
+
+	
 ## Entrega 6 mejorada Benjamín Greve
 Este codigo nace del programa anterior pero optimizado con el fin de lograr que mientras mas particulas el tiempo de proseso tarde linealmente más, a diferencia del codigo anterior que era exponencial. Esto se logra gracias a cambiar el funcionamiento de la funcion de choque dentro del odeint que es lo que más tarda el programa anterior, es por eso que se separan las particlas que pueden chocar con las que no, acelerando el proceso ya que al no chocar el odeint se simplifica, otra cosa que se mejora es guardar los datos en un archivo binario para luego leerlos y plotearlos con un codigo aparte.
 
