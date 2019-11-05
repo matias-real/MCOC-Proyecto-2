@@ -30,7 +30,7 @@ Una vez implementado el código para la simulación del movimiento de varias par
 - https://github.com/bagreve/MCOC-Proyecto-2-Entrega-4
 - https://github.com/Benjaceroni/MCOC-Proyecto-2
 
-*Entrega 6 mejorada*
+# Entrega 6 mejorada #
 
 Este código nace del programa anterior pero optimizado, con el fin de lograr que el timepo de funcionamiento aumente linealmente con el número de partículas a simular, a diferencia del código anterior que lo hacía de forma exponencial. Esto se logró a través de un cambio en el funcionamiento de la función de choque dentro del odeint, que es lo que más tardaba en el programa anterior. Es por esto que se separan las partículas que pueden chocar y las que no, de manera de acelerar el proceso ya que al no chocar el odeint se simplifica. Otra aspecto que se mejoró en esta entrega fue que los datos se guardaron en un archivo binario para luego leerlos y posteriormente graficarlos con un código aparte.
 
@@ -147,7 +147,7 @@ Por la similitud existente entre los graficos obtenidos en los distintos equipos
 - Grafico N particulas vs Tiempo
 ![particulas vs tiempo](https://user-images.githubusercontent.com/53497030/68245290-7403fe80-fff5-11e9-9b45-b442473964d0.png)
 
-**Entrega 6 mejorada Matías Real**
+## Entrega 6 mejorada Matías Real ##
 
 - Con 2 Partículas: tiempo total 10.31 segundos.
 ![N_igual2](https://user-images.githubusercontent.com/53578787/68244824-6f8b1600-fff4-11e9-8d8c-1adfc01bc3fa.png)
