@@ -119,3 +119,21 @@ El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 
 
 ## Entrega 6 mejorada Matías Real
 
+- Con 2 Partículas: tiempo total 10.31 segundos.
+![N_igual2](https://user-images.githubusercontent.com/53578787/68244824-6f8b1600-fff4-11e9-8d8c-1adfc01bc3fa.png)
+
+- Con 5 Partículas: tiempo total 22.59 segundos.
+![N_igual5](https://user-images.githubusercontent.com/53578787/68244837-76198d80-fff4-11e9-9e6d-33ffc9fb4c86.png)
+
+- Con 10 partículas: tiempo total 41.70 segundos.
+![N_igual10](https://user-images.githubusercontent.com/53578787/68244844-79147e00-fff4-11e9-8211-853ab9805dfd.png)
+
+- Con 15 partículas: tiempo total 67.59 segundos.
+![N_igual15](https://user-images.githubusercontent.com/53578787/68244855-7d409b80-fff4-11e9-8ad8-7138bb6cc0d1.png)
+
+- Con 20 partículas: tiempo total 84.22 segundos. 
+![N_igual20](https://user-images.githubusercontent.com/53578787/68244866-80d42280-fff4-11e9-8957-9030a8149856.png)
+
+- Con 40 partículas: tiempo total 179.95 segundos.
+![N_igual40](https://user-images.githubusercontent.com/53578787/68244873-85004000-fff4-11e9-9443-0eb8fbde84a1.png)
+
