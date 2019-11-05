@@ -37,7 +37,7 @@ Este código nace del programa anterior pero optimizado, con el fin de lograr qu
 El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 0.05 segundos y se utilizaran los mismos archivos de posicionamiento del codigo anterior con 2, 5, 10 y 20 particulas.
 También se tomo estos archivos con 1, 3, 10, 15, 20, 30, 45, 70, 100, 120 y 150 partículas.
 
-##Entrega 6 mejorada Felipe Lorca
+## Entrega 6 mejorada Felipe Lorca
 **Tiempo de simulación y Numero de particulas**
 
 	Simulaciones con dt de 0.00001 s y t max de 0.05 s
@@ -105,6 +105,27 @@ También se tomo estos archivos con 1, 3, 10, 15, 20, 30, 45, 70, 100, 120 y 150
 ## Discusión
 
 Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se alcanzó el objetivo de esta última entrega.
+
+## Entrega 6 mejorada Benjamin Ceroni
+**Tiempo de simulación y Numero de particulas**
+
+	Simulaciones con dt de 0.00001 s y t max de 0.05 s
+
+	Para la simulación  1:   5.3s	 	N = 1
+	Para la simulación  2:   8.6s  		N = 3
+	Para la simulación  3:   25.2s 		N = 10
+	Para la simulación  4:   37.6s 		N = 15
+	Para la simulación  5:   50.2s 		N = 20
+	Para la simulación  6:   79.9s 		N = 30
+	Para la simulación  7:   122.8s 	N = 45
+	Para la simulación  8:   206.9s 	N = 70
+	Para la simulación  9:   329.8s 	N = 100
+	Para la simulación 10:   423.6s 	N = 120
+	Para la simulación 11:   573.4s 	N = 150
+	
+**Tiempo simulación vs Numero de partículas**
+![grafico](https://user-images.githubusercontent.com/53712580/68247994-b976fa80-fffa-11e9-9f6c-ef81fd55db80.png)
+
 
 ## Entrega 6 mejorada Benjamín Greve
 
