@@ -117,6 +117,9 @@ El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 
 - Con 20 Particulas: tiempo total 86.361000061 segundos.
 ![Veinte particulas](https://user-images.githubusercontent.com/53497030/68216637-efe35400-ffbf-11e9-946c-b76c1015d46e.PNG)
 
+- Grafico N particulas vs Tiempo
+
+
 ## Entrega 6 mejorada Matías Real
 
 - Con 2 Partículas: tiempo total 10.31 segundos.
