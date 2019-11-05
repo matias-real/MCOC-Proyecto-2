@@ -140,3 +140,8 @@ El programa tiene un paso de tiempo de 0.00001 segundos con un tiempo maximo de 
 - Con 40 partículas: tiempo total 179.95 segundos.
 ![N_igual40](https://user-images.githubusercontent.com/53578787/68244873-85004000-fff4-11e9-9443-0eb8fbde84a1.png)
 
+## Tiempo de simulación y Numero de particulas 
+
+![Grafico_Funcionamiento](https://user-images.githubusercontent.com/53578787/68246947-9ba89600-fff8-11e9-8f00-a3535ad653bd.png)
+
+
