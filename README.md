@@ -126,6 +126,7 @@ Se puede apreciar que con el código mejorado a medidad que se aumenta la cantid
 **Tiempo simulación vs Numero de partículas**
 ![grafico](https://user-images.githubusercontent.com/53712580/68247994-b976fa80-fffa-11e9-9f6c-ef81fd55db80.png)
 
+Como se logra observar una tendencia lineal al comparar el tiempo de simulacion en relación a la cantidad de partículas simuladas, se concluye que el objetivo de la entrega es exitoso.
 
 ## Entrega 6 mejorada Benjamín Greve
 
