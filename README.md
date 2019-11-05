@@ -128,6 +128,8 @@ Se puede apreciar que con el código mejorado a medidad que se aumenta la cantid
 
 Como se logra observar una tendencia lineal al comparar el tiempo de simulacion en relación a la cantidad de partículas simuladas, se concluye que el objetivo de la entrega es exitoso.
 
+Por la similitud existente entre los graficos obtenidos en los distintos equipos, omiti el implementarlos junto a mis resultados. 
+
 ## Entrega 6 mejorada Benjamín Greve
 
 - Con 2 Particulas: tiempo total 10.7100000381 segundos.
