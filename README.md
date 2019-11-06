@@ -102,10 +102,6 @@ También se tomo estos archivos con 1, 3, 10, 15, 20, 30, 45, 70, 100, 120 y 150
 
 ![Grafico_11](https://raw.githubusercontent.com/matias-real/MCOC-Proyecto-2/master/Felipe_Lorca/grafico.png)
 
-## Discusión
-
-Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se alcanzó el objetivo de esta última entrega.
-
 ## Entrega 6 mejorada Benjamin Ceroni
 **Tiempo de simulación y Numero de particulas**
 
@@ -170,5 +166,10 @@ Por la similitud existente entre los graficos obtenidos en los distintos equipos
 ## Tiempo de simulación y Número de partículas 
 
 ![Grafico_Funcionamiento](https://user-images.githubusercontent.com/53578787/68246947-9ba89600-fff8-11e9-8f00-a3535ad653bd.png)
+
+## Discusión
+
+Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se cumplió el objetivo de esta última entrega.
+
 
 
