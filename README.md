@@ -169,7 +169,7 @@ Por la similitud existente entre los graficos obtenidos en los distintos equipos
 
 ## Discusión
 
-Se puede apreciar que con el código mejorado a medidad que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se cumplió el objetivo de esta última entrega.
+Se puede apreciar que con el código mejorado a medida que se aumenta la cantidad de partículas, la velocidad con la que la simulación se ejecuta aumenta linealmente. Por lo que se cumplió el objetivo de esta última entrega.
 
 
 
